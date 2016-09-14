@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <title></title>
   </head>
   <body>
-    <h1>Allergies</h1>
-    <form action='/results' method='post'>
-      <label for='inputNum'></label>
-      <input type='number' id='inputNum' name='inputNum'>
-      <button type='submit'>Submit</button>
-    </form>
-
+     <div class="container">
+        <h1>Find and Replace</h1>
+        <form action='/results' method='post'>
+          <label for='inputString'>Sentence</label>
+          <input type='text' id='inputString' name='inputString'>
+          <label for='inputFind'>Find</label>
+          <input type='text' id='inputFind' name='inputFind'>
+          <label for='inputReplace'>Replace Find with:</label>
+          <input type='text' id='inputReplace' name='inputReplace'>
+          <button type='submit'>Submit</button>
+        </form>
+    </div>
   </body>
 </html>
